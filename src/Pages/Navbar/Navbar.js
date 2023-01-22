@@ -3,8 +3,11 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthProvider';
 import logo from '../../Assets/logo.png'
+import { FaCartPlus } from "react-icons/fa";
+import { CounterContext } from '../Context/CountProvider';
 
 const Navbar = () => {
+    const { count } = useContext(CounterContext)
     const { user, logOut } = useContext(AuthContext)
     return (
         <div>
@@ -16,7 +19,8 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to='/'>Home</Link></li>
-                            <li><Link>Products</Link></li>
+                            <li><Link to='/products'>Products</Link></li>
+                            <li><Link to='/dashboard'>Dashboard</Link></li>
                         </ul>
                     </div>
                     <img className=' w-32' src={logo} alt="" />
@@ -24,10 +28,19 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link>Products</Link></li>
+                        <li><Link to='/products'>Products</Link></li>
+                        <li><Link to='/dashboard'>Dashboard</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    <label htmlFor="my-modal-3">
+                        <div className="indicator mr-5">
+                            <span className="indicator-item badge badge-secondary">{count}</span>
+                            <p className='text-4xl'><FaCartPlus></FaCartPlus></p>
+                        </div>
+                    </label>
+
+
                     {
                         user?.uid ?
                             <button onClick={logOut} className='btn btn-sm btn-error'>Log Out</button>

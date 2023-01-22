@@ -1,16 +1,14 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import ProductsDetails from './ProductsDetails';
+import React, { useEffect, useState } from 'react';
+import Details from './Details';
 import Slide from 'react-reveal/Slide';
-import { Link } from 'react-router-dom';
+import Cheakout from '../../Cheakout/Cheakout';
 
+const Products = () => {
 
-const HomeProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('http://localhost:5000/allproducts')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -26,20 +24,18 @@ const HomeProducts = () => {
                 </div>
             </Slide>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:ml-10 lg:m-20'>
+
                 {
-                    products.map(product => <ProductsDetails
-                        key={product._id}
+                    products.map(product => <Details
+                        key={product?._id}
                         product={product}
-                    ></ProductsDetails>)
+
+                    ></Details>)
                 }
-
             </div>
-            <div className='flex justify-center my-10'>
-                <Link to='/products'><button className='btn btn-success btn-outline'>View More</button></Link>
-            </div>
+            <Cheakout></Cheakout>
         </div>
-
     );
 };
 
-export default HomeProducts;
+export default Products;

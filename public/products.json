@@ -1,60 +1,50 @@
 [
     {
-      "_id": "63cc489f8e3293e870dab35f",
       "picture": "https://www.familybritches.com/wp-content/uploads/2019/01/featured-image-mens-accessories.jpg",
       "name": "Mens Fashion Watch",
       "price":300
     },
     {
-      "_id": "63cc489f3c6d16074f7708d1",
       "picture": "https://cdn.pixabay.com/photo/2019/06/11/16/01/clothing-4267339_960_720.jpg",
       "name": "Lether Belt ",
       "price":300
     },
     {
-      "_id": "63cc489fba90acd00e6524ae",
       "picture": "https://cdn.pixabay.com/photo/2020/05/27/16/02/mens-accessories-5227800_960_720.jpg",
       "name": "Man Fashion Set",
       "price":300
     },
     {
-      "_id": "63cc489ff5ca4b93cbaa65dd",
       "picture": "https://cdn.pixabay.com/photo/2015/06/15/20/18/accessories-810543_960_720.jpg",
       "name": "MoneyBag and Watch",
       "price":300
     },
     {
-      "_id": "63cc489f5ba2f910930624c9",
       "picture": "https://cdn.pixabay.com/photo/2020/09/03/15/27/book-5541633_960_720.jpg",
       "name": "Mens Sunglass",
       "price":300
     },
     {
-      "_id": "63cc489f777ec8b6d978f8b4",
       "picture": "https://cdn.pixabay.com/photo/2020/01/10/22/45/wrist-4756356_960_720.jpg",
       "name": "Digital Watch",
       "price":300
     },
     {
-      "_id": "63cc489f589e85a38526085d",
       "picture": "https://cdn.pixabay.com/photo/2017/08/28/18/30/mens-hats-2690758_960_720.jpg",
       "name": "Mens Hat",
       "price":300
     },
     {
-      "_id": "63cc489f7a0542b673dcc882",
       "picture": "https://cdn.pixabay.com/photo/2015/08/29/04/56/ring-912761_960_720.jpg",
       "name": "Hand Ring",
       "price":300
     },
     {
-      "_id": "63cc489fd4d31c5bf9c21841",
       "picture": "https://cdn.pixabay.com/photo/2017/03/20/17/44/wrist-watch-2159785_960_720.jpg",
       "name": "Watch And Glass",
       "price":300
     },
     {
-      "_id": "63cc489f3e4cc1d9edbbcf97",
       "picture": "https://cdn.pixabay.com/photo/2020/03/28/13/26/wallet-4977021_960_720.jpg",
       "name": "Mens Money Bag",
       "price":300
