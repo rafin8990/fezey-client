@@ -7,7 +7,7 @@ import Slide from 'react-reveal/Slide';
 const Header = () => {
     return (
         <div>
-            <Slide bottom>
+            <Slide>
                 <div className="carousel lg:h-[700px] ">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src={banner1} className="w-full" alt='' />

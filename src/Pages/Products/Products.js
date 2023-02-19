@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Details from './Details';
 import Slide from 'react-reveal/Slide';
-import Cheakout from '../../Cheakout/Cheakout';
+import { useLoaderData } from 'react-router-dom';
+import Booking from '../Booking/Booking';
+import { useState } from 'react';
 
 const Products = () => {
+    const products=useLoaderData();
+    const [booking, setBooking]=useState({});
 
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/allproducts')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [])
     return (
         <div>
             <Slide bottom>
@@ -23,17 +20,23 @@ const Products = () => {
                     <button className='btn btn-ghost'> Best sell </button>
                 </div>
             </Slide>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:ml-10 lg:m-20'>
+
+            
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:ml-10 lg:m-20'>
 
                 {
-                    products.map(product => <Details
+                    products?.map(product => <Details
                         key={product?._id}
                         product={product}
+                        setBooking={setBooking}
 
                     ></Details>)
                 }
             </div>
-            <Cheakout></Cheakout>
+            <Booking 
+            booking={booking}
+            setBooking={setBooking}
+            ></Booking>
         </div>
     );
 };

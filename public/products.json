@@ -2,51 +2,200 @@
     {
       "picture": "https://www.familybritches.com/wp-content/uploads/2019/01/featured-image-mens-accessories.jpg",
       "name": "Mens Fashion Watch",
-      "price":300
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Watch",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
     },
     {
-      "picture": "https://cdn.pixabay.com/photo/2019/06/11/16/01/clothing-4267339_960_720.jpg",
-      "name": "Lether Belt ",
-      "price":300
-    },
-    {
-      "picture": "https://cdn.pixabay.com/photo/2020/05/27/16/02/mens-accessories-5227800_960_720.jpg",
-      "name": "Man Fashion Set",
-      "price":300
-    },
-    {
-      "picture": "https://cdn.pixabay.com/photo/2015/06/15/20/18/accessories-810543_960_720.jpg",
-      "name": "MoneyBag and Watch",
-      "price":300
-    },
-    {
-      "picture": "https://cdn.pixabay.com/photo/2020/09/03/15/27/book-5541633_960_720.jpg",
-      "name": "Mens Sunglass",
-      "price":300
-    },
-    {
-      "picture": "https://cdn.pixabay.com/photo/2020/01/10/22/45/wrist-4756356_960_720.jpg",
+      "picture": "https://static-01.daraz.com.bd/p/b1b050d03cc772525d501a17ba018363.jpg",
       "name": "Digital Watch",
-      "price":300
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Watch",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
     },
     {
-      "picture": "https://cdn.pixabay.com/photo/2017/08/28/18/30/mens-hats-2690758_960_720.jpg",
-      "name": "Mens Hat",
-      "price":300
+      "picture": "https://cdn.vox-cdn.com/thumbor/ZcFXt84LNfVFvm_Y7EiAMRAYVO8=/0x0:2040x1360/1400x1400/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/22908906/vpavic_211006_4796_0061.jpg",
+      "name": "Digital Watch",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Watch",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
     },
     {
-      "picture": "https://cdn.pixabay.com/photo/2015/08/29/04/56/ring-912761_960_720.jpg",
-      "name": "Hand Ring",
-      "price":300
+      "picture": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_delivers-apple-watch-series-6_09152020.jpg.news_app_ed.jpg",
+      "name": " Watch",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Watch",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
     },
     {
-      "picture": "https://cdn.pixabay.com/photo/2017/03/20/17/44/wrist-watch-2159785_960_720.jpg",
-      "name": "Watch And Glass",
-      "price":300
+      "picture": "https://s.yimg.com/uu/api/res/1.2/1mUQIOgVvBV.QHyD63Skdg--~B/aD0xMjA0O3c9MTc1MzthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-12/45544550-7c97-11ed-be7f-b301bffa0c0d.cf.jpg",
+      "name": "Digital Watch",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Watch",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
     },
     {
-      "picture": "https://cdn.pixabay.com/photo/2020/03/28/13/26/wallet-4977021_960_720.jpg",
-      "name": "Mens Money Bag",
-      "price":300
+      "picture": "https://images.squarespace-cdn.com/content/v1/550b2072e4b0d3cbec5358d7/1556724168509-XQNGRCU5UCI7MOVZQN5P/DSC_4318.jpg?format=2500w",
+      "name": "Digital Watch",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Watch",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://i.ibb.co/MfpMz8V/pexels-web-donut-19090.jpg",
+      "name": "Special Shoe",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Shoe",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://static-01.daraz.com.bd/p/bcc815f79930e54314347eccf70915ae.jpg",
+      "name": "Style Shoe",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Shoe",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://media.wired.com/photos/62f597aa6896acbb4eb3394f/3:2/w_1280%2Cc_limit/Hoka-Kawana-SOURCE-Hoka-Gear.jpg",
+      "name": "Running Shoe",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Shoe",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/ed291e67-4618-49ec-8dda-2c2221a5df41/revolution-6-next-nature-mens-road-running-shoes-FgfhgR.png",
+      "name": "Nike Shoe",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Shoe",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://www.newbalance.com/dw/image/v2/AAGI_PRD/on/demandware.static/-/Library-Sites-NBUS-NBCA/default/dw664a36da/images/page-designer/2022/august/13852_Comp_A3_Mobile.jpg?sw=991&sfrm=jpg",
+      "name": "Clothing Shoe",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Shoe",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://cdn.shopify.com/s/files/1/2287/9679/products/DSC8397_1024x1024.jpg?v=1581496447",
+      "name": "Bata Formal Shoe",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Shoe",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://static-01.daraz.com.bd/p/fd97ff08985b80e0f2d9808b0f085588.jpg",
+      "name": "Black High quality Auto Gear Belt For Men",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Belt",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://static-01.daraz.com.bd/p/89a3cc8f11240ee45fc038666c654de9.jpg",
+      "name": "Stylish Brown artificial leather belt for men",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Belt",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://cdn.shopify.com/s/files/1/2287/9679/products/1_1f758dda-4af6-44fa-a802-27a18bfe6c7f_1024x1024.jpg?v=1663478627",
+      "name": "Hush Puppies MEN'S BELT",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Belt",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://assets.manufactum.de/p/086/086105/86105_01.jpg/natural-oil-tanned-leather-belt.jpg",
+      "name": "Natural Oil-Tanned Leather Belt, Brown | Manufactum",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Belt",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://cdn.shopify.com/s/files/1/2287/9679/products/1_889776e0-5061-4df2-b865-3f7b39eb7d00_1024x1024.jpg?v=1661235709",
+      "name": "Bata MEN'S BELT",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Belt",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+    },
+    {
+      "picture": "https://www.montblanc.com/variants/images/34480784411797995/A/w2500.jpg",
+      "name": "Black/brown 35 mm reversible leather belt - Luxury Belt",
+      "price":300,
+      "resalePrice":200,
+      "yearOfUse":1,
+      "category":"Belt",
+      "location":"Dhaka",
+      "sellerName":"Rafin Hossain",
+      "postedTime":"12:30PM 12 January 2023"
+      
     }
   ]

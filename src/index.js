@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import AuthProvider from './Pages/Context/AuthProvider';
 import CountProvider from './Pages/Context/CountProvider';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AuthProvider>
       <CountProvider>
-        <App />
+        
+          <App />
+       
       </CountProvider>
     </AuthProvider>
   </React.StrictMode>
