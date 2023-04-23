@@ -1,7 +1,8 @@
 import React from 'react';
 import { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { AuthContext } from '../Context/AuthProvider';
-import toast from 'react-hot-toast';
+
 
 const Booking = ({ booking,setBooking }) => {
     const { user } = useContext(AuthContext);
@@ -36,10 +37,8 @@ const Booking = ({ booking,setBooking }) => {
         .then(res=>res.json())
         .then(data=>{
             if(data.acknowledged){
-                toast.success('Your Booking is successfully Confirmed')
-                console.log(data)
-                
-                
+              alert('Your Booking is successfully Confirmed')
+              setBooking(null)
             }
         })
 
@@ -72,9 +71,9 @@ const Booking = ({ booking,setBooking }) => {
                             <input name='mobile' placeholder='Enter our Mobile Number ' className='input input-bordered w-full mt-2' type="text" />
 
                             <p className='mt-2'>Your Address:</p>
-                            <input name='address' placeholder='Enter Your Address ' className='input input-bordered w-full mt-2' type="text" />
+                            <input name='address' placeholder='Enter Your Address ' required className='input input-bordered w-full mt-2' type="text" />
 
-                            <button type='submit' className='btn btn-success w-full mt-5'>Confirm Booking </button>
+                            <button type='submit' required className='btn btn-success w-full mt-5'>Confirm Booking </button>
                         </form>
 
 
