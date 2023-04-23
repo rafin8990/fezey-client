@@ -2,12 +2,12 @@ import React from 'react';
 import Details from './Details';
 import Slide from 'react-reveal/Slide';
 import { useLoaderData } from 'react-router-dom';
-import Booking from '../Booking/Booking';
 import { useState } from 'react';
+import Booking from './Booking/Booking';
 
 const Products = () => {
-    const products=useLoaderData();
-    const [booking, setBooking]=useState({});
+    const products = useLoaderData();
+    const [booking, setBooking] = useState(null);
 
     return (
         <div>
@@ -21,7 +21,7 @@ const Products = () => {
                 </div>
             </Slide>
 
-            
+
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:ml-10 lg:m-20'>
 
                 {
@@ -33,10 +33,13 @@ const Products = () => {
                     ></Details>)
                 }
             </div>
-            <Booking 
-            booking={booking}
-            setBooking={setBooking}
-            ></Booking>
+            {
+                booking && <Booking
+                    booking={booking}
+                    setBooking={setBooking}
+                ></Booking>
+            }
+
         </div>
     );
 };

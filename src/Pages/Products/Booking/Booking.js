@@ -1,7 +1,7 @@
 import React from 'react';
 import { useContext } from 'react';
-import { toast } from 'react-hot-toast';
-import { AuthContext } from '../Context/AuthProvider';
+import { AuthContext } from '../../Context/AuthProvider';
+
 
 
 const Booking = ({ booking,setBooking }) => {

@@ -1,21 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../Context/AuthProvider';
 import Slide from 'react-reveal/Slide';
 import { Link, useNavigate } from 'react-router-dom';
 import registerpic from '../../Assets/refister.webp'
-import useToken from '../Hooks/useToken';
 
 const Register = () => {
     const { createUser, updateUser } = useContext(AuthContext);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
-    const [userEmail, setUserEmail]=useState('')
-    const [token]= useToken(userEmail)
 
-    if(token){
-        navigate('/')
-    }
     const handleRegister = data => {
         createUser(data.email, data.password)
             .then(result => {
@@ -24,38 +18,44 @@ const Register = () => {
                 const userInfo = {
                     displayName: data.name
                 }
-                console.log(userInfo)
                 updateUser(userInfo)
-                    .then(result => {
-                        console.log(result)
+                    .then(result => { 
+                        const role = data.option
+                        const email = data.email
+                        const name = data.name
+                       saveUser(role, name, email)
                     })
                     .catch(error => console.error(error))
             })
             .catch(error => console.error(error))
 
-            const role=data.option
-            const email=data.email
-            const name=data.name
-            const userCollection={
-                role: role,
-                email: email,
-                name: name
-            }
-            fetch('url/users',{
-                method:'POST',
-                headers:{
-                    'content-type' : 'application/json'
-                },
-                body:JSON.stringify(userCollection)
-            })
-            .then(res=>res.json())
-            .then(data=>{
-                console.log(data)
-                setUserEmail(email)
-            })
-            .catch(error=>console.error(error))
 
-}
+
+    }
+
+    const saveUser=(role, name, email)=>{
+        const userCollection = {
+            role,
+            email,
+            name
+        }
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(userCollection)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.acknowledged) {
+                    alert('User Registered Successfully')
+                    navigate('/login')
+                }
+            })
+            .catch(error => console.error(error))
+    }
 
 
     return (
@@ -77,7 +77,7 @@ const Register = () => {
                                     <span className="">Select A option</span>
                                 </label>
                                 <select {...register("option", { required: "option is required" })} className="select select-bordered w-full">
-                                    <option  selected>buyer</option>
+                                    <option selected>buyer</option>
                                     <option>user</option>
                                 </select>
                                 {errors.option && <p className="text-red-600">{errors.option?.message}</p>}
